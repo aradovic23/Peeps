@@ -30,7 +30,19 @@
 
   &::placeholder {
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 16px;
+  }
+
+  &:focus{
+    outline: none;
+  }
+}
+
+.person-count{
+  display: flex;
+  flex-direction: row-reverse;
+  p{
+    margin-top: 0;
   }
 }
 
@@ -43,11 +55,54 @@
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   padding: 10px;
+  
+ 
 
-  &:last-child {
-    border-bottom: 1px solid #ccc;
+
+  .profile-image {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
   }
 
+  .data {
+    display: flex;
+    flex-direction: column;
+    span {
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .name {
+      font-size: 16px;
+    }
+  }
+  
+  
+}
+
+.card-container{
+  &:last-child{
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.female-card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  background-color: #ffebee ;
+  
   .profile-image {
     display: flex;
     img {
@@ -70,4 +125,7 @@
       font-size: 16px;
     }
   }
+  
+  
+  
 }

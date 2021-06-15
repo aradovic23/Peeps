@@ -1,21 +1,22 @@
 import React from 'react'
 import './header.scss'
-import list from '../../img/list.png'
-import squares from '../../img/squares.png'
-import refresh from '../../img/refresh.png'
+
+import { MdRefresh } from "react-icons/md";
+import { MdList } from "react-icons/md";
 
 const Header = () => {
     return (
+        <div className='nav-wrap'>
         <div className='nav'>
             <div className="title">
-            <span>Bit Persons</span>
+            <h1>Bit People</h1>
             </div>
             <div className='icons'>
-            <span className="about">About</span>
-            <img src={refresh} alt="no-img" />
-            {/* <img src={squares} alt="no-img" /> */}
-            <img src={list} alt="no-img" />
+            <h4 className="about">About</h4>
+            <span><MdRefresh fontSize='24px'/></span>
+            <span><MdList fontSize='24px'/></span>
             </div>
+        </div>
         </div>
     )
 }
