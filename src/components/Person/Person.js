@@ -8,6 +8,8 @@ const Person = (props)=> {
     const year = date.getFullYear()
     const month = date.getMonth()
     const day = date.getDate()
+
+    const {grid} = props
     
     const email = props.mail;
 
@@ -18,11 +20,11 @@ const Person = (props)=> {
         const maskedEmail = maskedName + '@' + domain;
             return maskedEmail;
     };
-
     return (
-        <div className='card-container'>
+
+    
            
-           <div className={props.gender === "male" ? "person-card" : "female-card"}>
+           <div className={`${props.gender === "male" ? "person-card" : "female-card"} ${grid === false ? 'grid-layout': ''}`}>
                     <div className='profile-image'>  
                     <img src={props.img} alt="no-img"></img>
                     </div>
@@ -32,7 +34,6 @@ const Person = (props)=> {
                     <span> <MdCake/> Date of birth: {day}.{month + 1}.{year}.</span>
                     </div>
                 </div>
-        </div>
     )
 }
 export default Person

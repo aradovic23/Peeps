@@ -1,0 +1,19 @@
+$pink: #ec6f75;
+
+.wrapper-footer {
+  background-color: $pink;
+}
+
+.footer {
+  margin: 0 auto;
+  background-color: $pink;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  p {
+    color: white;
+  }
+}
