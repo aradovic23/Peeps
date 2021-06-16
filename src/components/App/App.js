@@ -1,10 +1,10 @@
-import './App.scss';
-import Header from '../Header/Header'
-import '../../fetch'
 import React, {useState, useEffect} from 'react'
+import Header from '../Header/Header'
 import getData from '../../fetch';
 import People from '../People/People'
 import Footer from '../Footer/Footer'
+import './App.scss';
+import '../../fetch'
 
 function App() {
 
@@ -44,7 +44,7 @@ function App() {
 
  return (
     <div className="App">
-      <Header refresh={getRefresh} grid={gridChange}/>
+      <Header swap={grid} refresh={getRefresh} grid={gridChange}/>
       <People grid={grid} data={filtered} inputVal={(arg) => setSrc(arg)}/>
       <Footer/>
     </div>

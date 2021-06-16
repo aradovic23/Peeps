@@ -9,7 +9,7 @@ import { MdGridOff } from "react-icons/md";
 const Header = (props) => {
     const {refresh} = props
     const {grid} = props
-
+    const {swap} = props
    
     return (
         <div className='nav-wrap'>
@@ -19,9 +19,8 @@ const Header = (props) => {
             </div>
             <div className='icons'>
             <h4 className="about">About</h4>
+            {swap === true ? <span><MdGridOn onClick={grid} fontSize='24px'/></span>:<span><MdGridOff onClick={grid} fontSize='24px'/></span>}
             <span><MdRefresh onClick={refresh} fontSize='24px'/></span>
-            <span><MdGridOn onClick={grid} fontSize='24px'/></span>
-            <span><MdGridOff onClick={grid} fontSize='24px'/></span>
             </div>
         </div>
         </div>

@@ -4,7 +4,7 @@ $hover: #ec6f75b4;
 
 .nav-wrap{
   background-color: $pink;
-
+  box-shadow: 0 5px 5px -5px gray;
 }
 
 .nav {
@@ -16,8 +16,6 @@ $hover: #ec6f75b4;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-
-
 h1{
   color: #fff;
   font-weight: 500;
@@ -28,20 +26,15 @@ h1{
   span {
     font-size: 32px;
     color: #fff;
-
-    
   }
-
   .icons {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
     h4{
       color: white;
       font-weight: 500;
     }
-
     span{
       margin: 0;
       &:hover{
@@ -55,7 +48,6 @@ h1{
     * {
       margin: 15px;
     }
-
     img {
       width: 16px;
       height: 16px;
