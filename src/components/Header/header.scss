@@ -1,9 +1,8 @@
-// variable
-$pink: #ec6f75;
-$hover: #ec6f75b4;
+// colors
+$blue: #1552EF;
 
 .nav-wrap{
-  background-color: $pink;
+  background-color: #fff;
   box-shadow: 0 5px 5px -5px gray;
 }
 
@@ -17,15 +16,15 @@ $hover: #ec6f75b4;
   width: 100%;
   max-width: 1200px;
 h1{
-  color: #fff;
-  font-weight: 500;
+  color: $blue;
+  font-weight: 700;
 }
   .about {
     font-size: 20px;
   }
   span {
     font-size: 32px;
-    color: #fff;
+    color: $blue;
   }
   .icons {
     display: flex;
@@ -38,7 +37,7 @@ h1{
     span{
       margin: 0;
       &:hover{
-        background-color: $hover;
+        cursor: pointer;
       }
       svg{
         margin: 0;

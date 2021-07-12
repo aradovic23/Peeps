@@ -1,12 +1,13 @@
-$pink: #ec6f75;
-
+$blue: #1552EF;
 .wrapper-footer {
-  background-color: $pink;
+  background-color: $blue;
+  box-shadow: 0 5px 5px 5px gray;
+
 }
 
 .footer {
   margin: 0 auto;
-  background-color: $pink;
+  background-color: $blue;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -15,5 +16,6 @@ $pink: #ec6f75;
   align-items: center;
   p {
     color: white;
+    font-size: 14px;
   }
 }

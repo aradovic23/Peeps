@@ -24,7 +24,7 @@ const Person = (props)=> {
 
     
            
-           <div className={`${props.gender === "male" ? "person-card" : "female-card"} ${grid === false ? 'grid-layout': ''}`}>
+           <div className={`${props.gender === "male" ? "person-card" : " person-card female"} ${grid === false ? 'grid-layout': ''}`}>
                     <div className='profile-image'>  
                     <img src={props.img} alt="no-img"></img>
                     </div>

@@ -3,7 +3,6 @@ import Header from '../Header/Header'
 import getData from '../../fetch';
 import People from '../People/People'
 import Footer from '../Footer/Footer'
-import './App.scss';
 import '../../fetch'
 
 function App() {

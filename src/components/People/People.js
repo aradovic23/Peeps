@@ -15,7 +15,7 @@ const People = (props) => {
         <div className='person-container'>
         <div className="search-bar">
                 
-                <MdSearch fontSize='24px'/>
+                <MdSearch id="md-search" fontSize='24px'/>
             <input type="text" name="search" id="search" placeholder="Search users" onChange={(e) => {inputVal(e.target.value)}}/>
             </div>
                 <div className='person-count'>

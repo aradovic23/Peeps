@@ -10,8 +10,7 @@ const Footer = () =>{
 
         <div className='wrapper-footer'>
         <div className='footer'>
-            <p> &copy; 2021 Copyright BIT</p>
-            <p>Last update: </p>
+            <p> &copy; 2021 Copyright Peeps Project</p>
         </div>
         </div>
     )
